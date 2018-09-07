@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画</title>
+	<link rel="stylesheet" type="text/css" href="./lib/animate.css">
+	<script src="./lib/jQuery.js"></script>
+
+	<style>
+		div{
+			height: 200px;
+			width: 200px;
+			background-color: red;
+
+		}
+	</style>
+</head>
+<body>
+	<div ></div>
+	<button>动画</button>
+
+	<script>
+		$(function(){
+			$("button").on("click",function(){
+				$("div").addClass("animated  infinite jello")
+			})
+		})
+	</script>
+</body>
+</html>

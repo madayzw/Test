@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>个人简历</title>
+	<link rel="stylesheet" type="text/css" href="./lib/animate.css">
+	<script src="./lib/jQuery.js"></script>
+	<link rel="stylesheet" type="text/css" href="./lib/swiper.min.css">
+	<script></script>
+
+	<style>
+	*{
+		padding: 0;
+		margin:0;
+	}
+	.header{
+		position: relative;	
+		/*background-image: url(./images/1.jpg);		*/
+	}
+	.navBox{
+		position: fixed;
+		/*left: 50px;*/
+		/*top:0px;*/
+		background-color: #2C3E50;
+		height: 10vh;
+		width:100%;
+		/*width: 1370px;*/
+	}
+
+	ul{
+		list-style:none;
+
+
+
+	}
+	/*.nav{
+		position: fixed;
+		position: fixed;
+		top: 0;
+	}*/
+	
+	#contact-item{
+		margin-right: 50px;
+	}
+	.nav .nav-item{
+		/*position: relative;*/
+		
+		float:right;
+		margin-left: 30px;
+		/*height: 35px;*/
+		color: #f5f5f5;
+		line-height: 10vh;
+		cursor: pointer;
+
+	}
+	.shouye{
+		background-image: url(./images/2.jpg);	
+		width: 100%;
+		height: 90vh;
+		overflow: hidden;
+		position: relative;
+		background-size: cover;
+
+	}
+	.about{
+		/*background-image:url(./images/3.jpg);*/
+		background-color: #DDDEE0;
+		width: 100%;
+		height: 1100px;
+		overflow: hidden;
+	}
+	.skill{
+		background-image: url(./images/2.jpg);	
+		width: 1350px;
+		height: 1200px;
+		overflow: hidden;
+		}.work{
+			background-image:url(./images/3.jpg);
+			width: 1350px;
+			height: 1200px;
+			overflow: hidden;
+		}
+		.product{
+			background-image:url(./images/2.jpg);
+			width: 1350px;
+			height: 1200px;
+			overflow: hidden;
+		}
+		.contact{
+			background-image:url(./images/3.jpg);
+			width: 1350px;
+			height: 1200px;
+			overflow: hidden;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+		}
+		.
+		.wrap{
+			position: relative;
+
+		}
+		.shouye h1{
+			/*position: absolute;*/
+			/*top:700px;*/
+			font-weight: bold;
+			/*position: absolute;*/
+			text-align: center;
+			/*margin:auto;*/
+			/*top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;*/
+			margin-top: 180px;
+			text-shadow: 3px 3px 5px #000;
+
+			
+		}
+		.sec1p{
+			position: absolute;
+			text-align: center;
+			margin:auto;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin-top: 350px;
+			font-size: 30px;
+			margin-bottom: 40px;					
+		}
+		.sec1p p{
+			font-family: "微软雅黑";	
+			margin-bottom: 30px;
+			text-shadow: 3px 3px 5px #000;
+		}
+		h4{
+			font-size: 30px;
+			margin-bottom: 20px;
+			/*text-shadow: 3px 3px 5px #000;*/
+		}
+		.about{
+			position: relative;
+		}
+
+		.about div h1{
+			font-weight: bold;	
+			text-align: center;			
+			font-size: 60px;
+			margin-bottom: 70px;
+			margin-top: 30px;
+			
+		}
+		.about div h2{
+			font-weight: bold;			
+			margin-left: 160px;		
+			font-size: 30px;
+			float: left;
+			/*text-shadow: 3px 3px 5px #000;*/
+
+		}
+		#xiangfa{
+			margin-left: 230px;
+		}
+		.bigCircle{
+			/*border:1px solid red;*/
+			height:600px;		
+			background-image:url("./images/3.jpg");
+		}
+		.circle{
+			float: left;
+			/*opacity: 0;*/
+		}
+		.circle1{
+			border:1px solid red;
+			width:350px;
+			height: 350px;	margin-top:150px;
+			margin-left: 80px;		
+			text-align: center;
+			border-radius: 50%;
+		}
+		.circle1 div{
+			margin-top: 100px;
+			/*vertical-align: center;*/
+			font-size: 20px;
+			color: #87DAFB;
+			text-shadow: 3px 3px 5px #000;
+			font-weight: bold;
+		}
+		.circle2{
+			border:1px solid red;
+			width:350px;
+			height: 350px;	margin-top:150px;
+			margin-left: 80px;		
+			text-align: center;
+			border-radius: 50%;
+		}
+		.circle2 div{
+			margin-top: 100px;
+			/*vertical-align: center;*/
+			font-size: 20px;
+			color: #87DAFB;
+			text-shadow: 3px 3px 5px #000;
+			font-weight: bold;
+		}
+		.circle3{
+			border:1px solid red;
+			width:350px;
+			height: 350px;	margin-top:150px;
+			margin-left: 80px;		
+			text-align: center;
+			border-radius: 50%;
+		}
+		.circle3 div{
+			margin-top: 100px;
+			/*vertical-align: center;*/
+			font-size: 20px;
+			color: #87DAFB;
+			text-shadow: 3px 3px 5px #000;
+			font-weight: bold;
+		}
+		.sectionText{
+			border: 6px solid #E0E1E3;
+			width: 600px;
+			border-radius: 10%;
+			margin:auto;
+			
+		}
+		#img1{
+			/*position: absolute;*/
+			float:left;
+
+		}
+		.infoBox{
+			float: left;
+			/*display: inline;*/
+			margin-top: 100px;
+		}
+		.infoBox p{
+			font-size: 20px;
+			font-family: "楷体";
+			text-shadow: 3px 3px 5px #000;
+		}
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+		}
+		/*#test{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			position: fixed;
+			top: 0;
+			right: 10px;
+		}*/
+	</style>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<!-- <div id="test"></div> -->
+		<div class="navBox">
+		<!-- 	<div class="nav-img">
+				<span>头像</span>
+				<br>
+				<span>id</span>
+			</div> -->
+			<!-- <div id="navId"> -->
+				<ul class="nav">
+				<li id="contact-item" class="nav-item">联系方式</li>
+				<li class="nav-item">作品</li>
+				<li class="nav-item">工作经历</li>
+				<li class="nav-item">技能</li>
+				<li class="nav-item">关于我</li>
+				<li class="nav-item one">首页</li>				
+			</ul>
+			<!-- </div>		 -->
+		</div>		
+	</div>
+	<!-- 主体 -->
+	<div class="wrap">
+		<div class="shouye">			
+			<h1>我只管努力，上天自有安排</h1>			
+			<div class="sec1p">
+				<p class="secp1">一个代码偏执狂</p>
+				<p class="secp2">享受从无到有的成就感</p>
+				<p class="secp3">路漫漫其修远兮 吾将上下而求索</p>
+			</div>
+		</div>
+		<div class="about">
+			<div>
+				<h1>About ME</h1>				
+				<h2 id="why">为什么想做前端工程师</h2>
+				<h2 id="advantage">优势和不足</h2>
+				<h2 id="xiangfa">我的想法是?</h2>
+			</div>
+			
+			<div class="bigCircle">
+				<div class="circle1 circle">
+					<div>
+						<p>可能就像这一句情话</p>
+						<p>You are the css to my html.</p>
+						<p>“我的生活索然无味，</p>
+						<p>直到遇见了你。”</p>
+						<p>纯属兴趣爱好,看好这个行业而学</p>
+					</div>	 					   	
+				</div>
+				<div class="circle2 circle">
+					<div>
+						<p>我的不足是：不想加班</p>
+						<p>放假就想老老实实躺会</p>
+						<p>我的优势是：主动加班</p>
+						<p>在赶项目等阶段还是老实本分的敲</p>
+						<p>如果你不介意</p>
+						<p>那就选我吧！</p>
+					</div>	
+				</div>
+				<div class="circle3 circle">
+					<div>
+						<p>有人说 ฅ^•ﻌ•^ฅ</p>
+						<p>IT是个青春饭 </p>
+						<p>但我 (ฅ´ω`ฅ)</p>
+						<p>要到敲不动为止</p>
+						<p>。</p>
+						<p>。</p>
+						<p>当然，得先有一个你@我offer！</p>
+					</div>
+				</div>	
+			</div>
+
+			<div class="sec2Bor">
+				<div class="sectionText">
+					<img id="img1" src="images/yuan.jpg" width="300px",height="300px">
+					
+					<div class="infoBox">
+						<h4>简单介绍</h4>
+						<p>姓 名：张武</p>
+						<p>年 龄：22</p>
+						<p>性 别: 男</p>
+						<p>职 位：前端工程师</p> 
+					</div>               
+				</div>
+			</div>
+		</div>
+		<div class="skill"></div>
+		<div class="work"></div>
+		<div class="product"></div>
+		<div class="contact"></div>
+	</div>
+<!-- 指示器 
+	<div class="aside">
+		<ul class="indicator">
+			<li class="indicator-item"></li>
+			<li class="indicator-item"></li>
+			<li class="indicator-item"></li>
+			<li class="indicator-item"></li>
+			<li class="indicator-item"></li>
+			<li class="indicator-item"></li>
+		</ul>
+	</div> -->
+	<script>
+		$(function(){
+			$(".nav-item").mouseover(function(){
+				$(this).css(
+					"color", "#E87E04"		
+					)
+			})
+			$(".nav-item").mouseout(function(){
+				$(this).css("color","#f5f5f5")
+			})
+
+			window.onscroll=function(){
+				console.log("Y轴移动了:"+pageYOffset+"px");
+				if(pageYOffset<=300){
+					$(".shouye h1").addClass("animated   slideInLeft");
+					$(".sec1p .secp1").addClass("animated slideInRight");
+					$(".sec1p .secp2").addClass("animated slideInLeft");
+					$(".sec1p .secp3").addClass("animated slideInRight");
+				}
+				else{
+					$(".shouye h1").removeClass("animated   slideInLeft");
+					$(".sec1p .secp1").removeClass("animated slideInRight");
+					$(".sec1p .secp2").removeClass("animated slideInLeft");
+					$(".sec1p .secp3").removeClass("animated slideInRight");
+				}
+
+
+				if(pageYOffset>=490&&pageYOffset<1310){
+						// $(".circle1").css("opacity","1");
+						$(".circle1").addClass("animated  rotateInDownLeft")
+						// $(".circle2").css("opacity","1");
+						$(".circle2").addClass("animated  rubberBand")
+						// $(".circle3").css("opacity","1");
+						$(".circle3").addClass("animated  rotateInDownRight")
+					}
+					else{
+						// $(".circle1").css("opacity","1");
+						$(".circle1").removeClass("animated  rotateInDownLeft")
+						// $(".circle2").css("opacity","1");
+						$(".circle2").removeClass("animated  rubberBand")
+						// $(".circle3").css("opacity","1");
+						$(".circle3").removeClass("animated  rotateInDownRight")
+					}
+				}
+
+
+				$("#img1").mouseover(function(){
+					$(this).addClass("animated  pulse")
+
+				})
+				$("#img1").mouseout(function(e){
+
+					$(this).removeClass("animated pulse")
+				})
+
+				// if(window.pageYOffset>$(".nav").offsetHeight){
+				// 	$(".nav").css("position","fixed");
+				// }
+
+				$(".one").on("click",function(){
+					
+				})
+
+			});
+
+		
+	// $(".shouye h1").addClass("animated   slideInLeft");
+	// $(".sec1p .secp1").addClass("animated slideInRight");
+	// $(".sec1p .secp2").addClass("animated slideInLeft");
+	// $(".sec1p .secp3").addClass("animated slideInRight");
+
+
+</script>
+
+
+<!-- <div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"><img id="img1" src="images/yuan.jpg" width="50px",height="50px"></div>
+		<div class="swiper-slide"><img id="img1" src="images/yuan.jpg" width="50px",height="50px"></div>
+		<div class="swiper-slide"><img id="img1" src="images/yuan.jpg" width="50px",height="50px"></div>
+	</div>
+	 Add Pagination -->
+<!-- 	<div class="swiper-pagination"></div>
+</div> -->
+
+<!-- Swiper JS -->
+<!-- <script src="./lib/swiper.min.js"></script> --> -->
+
+<!-- Initialize Swiper -->
+<!-- <script>
+	var swiper = new Swiper('.swiper-container', {
+		direction: 'vertical',
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+</script> -->
+</body>
+</html>
